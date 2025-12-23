@@ -20,7 +20,7 @@ function GenreCard({ genretype }) {
   {
     switch(genretype)
     {
-      case "Fiction" :   
+      case "Indoor Plants" :   
         setFictionCategoryCheckbox(true)
         setThrillerCategoryCheckbox(false)
         setTechCategoryCheckbox(false)
@@ -30,7 +30,7 @@ function GenreCard({ genretype }) {
         dispatchProductFilterOptions({type:"SELECT_ONLY_FICTION_FILTER"})
         break;
 
-      case "Thriller" : 
+      case "Succulents / Cacti" : 
         setFictionCategoryCheckbox(false)
         setThrillerCategoryCheckbox(true)
         setTechCategoryCheckbox(false)
@@ -40,7 +40,7 @@ function GenreCard({ genretype }) {
         dispatchProductFilterOptions({type:"SELECT_ONLY_THRILLER_FILTER"})
         break;
 
-      case "Tech" : 
+      case "Flowering Plants" : 
         setFictionCategoryCheckbox(false)
         setThrillerCategoryCheckbox(false)
         setTechCategoryCheckbox(true)
@@ -50,7 +50,7 @@ function GenreCard({ genretype }) {
         dispatchProductFilterOptions({type:"SELECT_ONLY_TECH_FILTER"})
         break;
 
-      case "Philosophy" : 
+      case "Air-Purifying Plants" : 
         setFictionCategoryCheckbox(false)
         setThrillerCategoryCheckbox(false)
         setTechCategoryCheckbox(false)

@@ -1,7 +1,5 @@
 import { useReducer, createContext, useContext } from "react"
-
 const CartContext = createContext()
-
 const updateCartFunc = (state,action) => {
     switch(action.type)
     {
@@ -12,7 +10,6 @@ const updateCartFunc = (state,action) => {
         default : return [...state] 
     }
 }
-
 const CartContextProvider = ({children}) => {
     const [userCart, dispatchUserCart] = useReducer(updateCartFunc,[])
 

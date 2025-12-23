@@ -10,11 +10,11 @@
     height: 61.4rem;
 }
 
-.home-page-background-img
-{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.home-page-background-img {
+  width: 100%;          /* full width of parent container */
+  height: 600px;        /* change according to need */
+  object-fit: cover;    /* image ko stretch kiye bina cover kare */
+  border-radius: 10px;  /* optional rounded corners */
 }
 
 .homepage-headings

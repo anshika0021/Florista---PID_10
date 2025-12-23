@@ -1,112 +1,159 @@
-.product-page-container
-{
+/* ---------- Container Styles ---------- */
+.product-page-container {
     width: 100%;
     min-height: calc(100vh - 10.7rem);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
+    background-color: #f6f9f7; /* subtle light greenish background */
 }
 
-.product-page-item
-{
-    min-width: 80%;
-    min-height: 80%;
-    padding: 1rem 5rem 3rem 5rem;
+.product-page-item {
+    width: 85%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media only screen and (max-width: 1018px)
-{
-    .item-author, .item-rating
-    {
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
+.product-page-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
 
-@media only screen and (max-width: 945px)
-{
-    .product-page-item
-    {
+/* ---------- Plant Image ---------- */
+.plant-image {
+    flex: 1 1 400px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.plant-image:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- Details Section ---------- */
+.item-details {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.item-details h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.item-details hr {
+    width: 100%;
+    border: 0.5px solid #dcdcdc;
+    margin-bottom: 1rem;
+}
+
+.item-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4f4f4f;
+}
+
+.item-price-details {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #27ae60;
+}
+
+.discount-on-item {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+/* ---------- Buttons ---------- */
+.item-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.item-buttons button {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.solid-primary-btn {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+.solid-primary-btn:hover {
+    background-color: #219150;
+}
+
+.solid-warning-btn {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.solid-warning-btn:hover {
+    background-color: #d88b0f;
+}
+
+.item-notify-me-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.item-notify-me-btn:hover {
+    background-color: #c0392b;
+}
+
+/* ---------- Out of Stock ---------- */
+.out-of-stock-text {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 1024px) {
+    .product-page-item {
         flex-direction: column;
         align-items: center;
+        padding: 1.5rem;
     }
 
-    .item-buttons
-    {
+    .item-buttons {
         flex-direction: column;
-        margin-top: 1.6rem;
-        align-items: stretch;
     }
 
-    .item-buttons button
-    {
+    .item-buttons button {
         width: 100%;
     }
 }
 
-.bookcover-image
-{
-    height: 40rem;
-}
+@media (max-width: 480px) {
+    .item-details h2 {
+        font-size: 1.8rem;
+    }
 
-.item-details
-{
-    min-height: 100%;
-    max-width: 80rem;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0rem 4rem 0rem 4rem;
-    flex-grow: 1;
-}
-
-.item-details hr
-{
-    width: 100%;
-}
-
-.item-description
-{
-    text-align: left;
-    margin: 0;
-}
-
-.item-price-details
-{
-    margin: 0;
-}
-
-.discount-on-item
-{
-    color: var(--notification-or-error);
-    font-size: 14px;
-}
-
-.item-buttons
-{
-    width: 100%;
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    gap: 1rem;
-}
-
-.item-buttons button
-{
-    flex-grow: 1;
-    margin: 0;
-}
-
-.out-of-stock-text
-{
-    color: var(--red-color);
-}
-
-.item-notify-me-btn
-{
-    background-color: var(--red-color);
+    .item-price-details {
+        font-size: 1.3rem;
+    }
 }

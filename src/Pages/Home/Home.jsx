@@ -76,24 +76,22 @@ function Home() {
       <h1 className='homepage-headings'>Genres</h1>
       <div className='genre-cards-container'>
           
-        <Link to={"/shop"}> 
-            <GenreCard genretype="Fiction"/>
-        </Link>
-        <Link to={"/shop"}> 
-            <GenreCard genretype="Thriller"/>
-        </Link>
-        <Link to={"/shop"}> 
-            <GenreCard genretype="Tech"/>
-        </Link>
-        <Link to={"/shop"}> 
-            <GenreCard genretype="Philosophy"/>
-        </Link>
-        <Link to={"/shop"}> 
-            <GenreCard genretype="Romance"/>
-        </Link>
-        <Link to={"/shop"} state={{navigate: true}}> 
-            <GenreCard genretype="Manga"/>
-        </Link>
+       <Link to={"/shop"}> 
+    <GenreCard genretype="Indoor Plants"/>
+</Link>
+<Link to={"/shop"}> 
+    <GenreCard genretype="Outdoor Plants"/>
+</Link>
+<Link to={"/shop"}> 
+    <GenreCard genretype="Succulents & Cacti"/>
+</Link>
+<Link to={"/shop"}> 
+    <GenreCard genretype="Flowering Plants"/>
+</Link>
+<Link to={"/shop"}> 
+    <GenreCard genretype="Air-Purifying Plants"/>
+</Link>
+
 
       </div>
 

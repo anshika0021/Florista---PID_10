@@ -5,14 +5,14 @@
 {
     --dark-grey     : #2F4858;
     --dark-grey-2   : #282c34;
-    --royal-blue    : #29517C;
-    --sky-blue      : #0e7490;
-    --bluish-white  : #F5F7F9;
-    --pure-white    : white;
-    --red-color     : #ca0e1d;
-    --background-color-dull-yellow: #e0e0d4;
-    --yellow-background-color     : #efe6e1;
-    --dull-grey     : #8f8f8f;
+    --royal-blue    : #05c3a9;
+    --sky-blue      : #063537;
+    --bluish-white  : #234b32;
+    --pure-white    : rgb(21, 95, 84);
+    --red-color     : #232824;
+    --background-color-dull-yellow: rgb(21, 95, 84);
+    --yellow-background-color     : rgb(21, 95, 84);
+    --dull-grey     : #cabfbf;
 }
 
 html
@@ -28,13 +28,13 @@ body
 html, body
 {
     height: auto;
-    background-color: white;
+    background-color: rgb(14, 82, 57);
 }
 
 .App {
     min-height: 100%;
     text-align: center;
-    background-color: white;
+    background-color:  rgb(14, 82, 57);
     font-family: 'Comfortaa', cursive;
 }
 

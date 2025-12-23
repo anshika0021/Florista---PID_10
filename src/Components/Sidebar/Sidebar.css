@@ -13,8 +13,8 @@
     gap: 1rem;
     justify-content: flex-start;
     box-sizing: border-box;
-    color: black;
-    background-color: white;
+    color: rgb(255, 254, 254);
+    background-color: rgb(43, 56, 53);
 }
 
 @media only screen and (max-width:1015px){
@@ -200,5 +200,5 @@ input[type="range"]::-webkit-slider-thumb
 
 .price-range-value
 {
-    color: white;
+    color: rgb(231, 227, 227);
 }
